@@ -195,14 +195,6 @@ const VideoCarousel = () => {
               <span
                 className="absolute h-full w-full rounded-full"
                 ref={(el) => (videoSpanRef.current[i] = el)}
-                onClick={() => {
-                  setVideo((prev) => ({
-                    ...prev,
-                    videoId: i,
-                    startPlay: true, // Start playing the video when pagination is clicked
-                    isPlaying: true, // Ensure the video is marked as playing
-                  }));
-                }}
               />
             </span>
           ))}
